@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: my-lb
   labels:
-    app: my-api
-  namespace: web-app
+    app: test-static-kube
+  namespace: web-app-2
 spec:
   type: LoadBalancer
   ports:
   - port: 5000
     targetPort: 5000
   selector:
-    app: my-api
+    app: test-static-kube

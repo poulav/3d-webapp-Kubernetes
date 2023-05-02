@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: my-api
-  name: my-api
-  namespace: web-app
+    app: test-static-kube
+  name: test-static-kube
+  namespace: web-app-2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: my-api
+      app: test-static-kube
   template:
     metadata:
       labels:
-        app: my-api
+        app: test-static-kube
     spec:
       containers:
-        - image: ritesh2000/my-api:latest
-          name: my-api
+        - image: poulavbiswas/test-static-kube:latest
+          name: test-static-kube
           ports:
             - containerPort: 5000

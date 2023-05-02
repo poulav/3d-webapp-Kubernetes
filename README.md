@@ -15,10 +15,10 @@ The app has multiple endpoints which you play with. The app is deployed on a Kub
 ### How to run:
 
 * Clone the repo
-* ```docker build --tag poulavbiswas/ml-score-api .```
-* ```docker run --rm --name test-api -p 5000:5000 -d poulavbiswas/ml-score-api```
+* ```docker build --tag poulavbiswas/test-static-kube .```
+* ```docker run --rm --name test-api -p 5000:5000 -d poulavbiswas/test-static-kube```
 * ```curl http://localhost:5000/```
-* ```docker push poulavbiswas/ml-score-api```
+* ```docker push poulavbiswas/test-static-kube```
 * ```docker rm -f test-api``` -- to remove the container(empty port 5000)
 
 After a sucessful test on docker, you can deploy the app on a Kubernetes cluster.
