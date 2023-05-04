@@ -53,6 +53,6 @@ A dynamic todo app deployed on Kubernetes cluster.
 
 
 
-
+Sourced from https://harald-u.github.io/kubernetes-handson/
 
 
